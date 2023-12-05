@@ -4,5 +4,11 @@
   ],
   "routes": [
     {"src": "/(.*)", "dest": "main.py"}
-  ]
+  ],
+  "functions": {
+    "api": {
+      "handler": "main.app",
+      "memory": 1024
+    }
+  }
 }
