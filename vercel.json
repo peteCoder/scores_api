@@ -3,12 +3,6 @@
     {"src": "/main.py", "use": "@vercel/python"}
   ],
   "routes": [
-    {"src": "/(.*)", "dest": "main.py"}
-  ],
-  "functions": {
-    "api": {
-      "handler": "main.app",
-      "memory": 1024
-    }
-  }
+    {"src": "/(.*)", "dest": "server/api.py"}
+  ]
 }
